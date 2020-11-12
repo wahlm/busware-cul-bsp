@@ -1,0 +1,32 @@
+{
+  "packages": [
+    {
+      "name": "buswareculbsp",
+      "maintainer": "wahlm",
+      "websiteURL": "https://github.com/wahlm/busware-cul-bsp",
+      "email": "",
+      "help": {"online": "http://www.busware.de/tiki-index.php?page=CUL"},
+
+      "platforms": [
+        {
+          "name": "Arduino BSP for BusWare CUL",
+          "architecture": "avr",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "help": {"online": "http://www.busware.de/tiki-index.php?page=CUL"},
+          "url": "https://github.com/wahlm/busware-cul-bsp/raw/master/arduino/avr.zip",
+          "archiveFileName": "buswareculbsp-avr-1.0.0.zip",
+          "size": "4923",
+          "boards": [
+            {"name": "busware CUL"}
+          ]
+        }
+      ],
+
+      "tools": [
+        
+      ]
+    }
+  ]
+}
+
