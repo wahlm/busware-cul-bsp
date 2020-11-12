@@ -1,0 +1,33 @@
+##############################################################
+
+buswareCUL.build.usb_product="CUL"
+buswareCUL.build.usb_manufacturer="busware.de"
+buswareCUL.build.extra_flags=-DUSB_VID={build.vid} -DUSB_PID={build.pid} '-DUSB_PRODUCT={build.usb_product}' '-DUSB_MANUFACTURER={build.usb_manufacturer}'
+buswareCUL.upload.tool=arduino:avrdude
+buswareCUL.bootloader.tool=arduino:avrdude
+buswareCUL.bootloader.file=caterina/Caterina-Leonardo.hex
+buswareCUL.upload.use_1200bps_touch=true
+buswareCUL.upload.wait_for_upload_port=true
+# VID/PID of ATmega32U4 DFU Bootloader
+buswareCUL.vid.0=0x03EB
+buswareCUL.pid.0=0x2FF4
+
+buswareCUL.name=BusWare CUL
+buswareCUL.upload.protocol=flip1
+buswareCUL.upload.maximum_size=28672
+buswareCUL.upload.speed=57600
+buswareCUL.upload.disable_flushing=true
+buswareCUL.bootloader.low_fuses=0xff
+buswareCUL.bootloader.high_fuses=0xd8
+buswareCUL.bootloader.extended_fuses=0xfb
+buswareCUL.bootloader.unlock_bits=0x3F
+buswareCUL.bootloader.lock_bits=0x2F
+buswareCUL.build.mcu=atmega32u4
+buswareCUL.build.f_cpu=8000000L
+# Atmel Corp. LUFA USB to Serial Adapter Project
+buswareCUL.build.vid=0x03EB
+buswareCUL.build.pid=0x204B
+buswareCUL.build.core=arduino:arduino
+buswareCUL.build.variant=busware_cul
+buswareCUL.build.board=BUSWARE_CUL
+
